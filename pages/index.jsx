@@ -9,7 +9,6 @@ export default function Home() {
 
         {/* Center */}
       </main>
-
       <div>{/* Player */}</div>
     </div>
   );
