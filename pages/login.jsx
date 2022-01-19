@@ -3,9 +3,7 @@ import { getProviders, signIn } from "next-auth/react";
 import { useEffect } from "react";
 
 function Login({ providers }) {
-  useEffect(() => {
-    console.log(providers);
-  }, [providers]);
+
 
   return (
     <div className="flex flex-col justify-center items-center w-full bg-black min-h-screen">

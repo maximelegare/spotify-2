@@ -26,7 +26,7 @@ async function refreshAccessToken(token) {
     };
 
   } catch (error) {
-    console.log(error);
+
     return {
       ...token,
       error: "RefreshAccessTokenError",
@@ -70,13 +70,13 @@ export default NextAuth({
 
       // Return previous token if the token access has not expired yet
       if (Date.now() < token.accessTokenExpires) {
-        console.log(token.accessToken)
+     
       
         return token;
       }
 
     //   If the token expired, refresh the token usibg
-      console.log("ACCESS TOKEN HAS EXPIRED, REFRESHING...");
+
 
       
       return await refreshAccessToken(token);
